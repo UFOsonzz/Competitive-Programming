@@ -10,7 +10,7 @@ int n, s[Limit + 5], t[Limit + 5];
 vector<Interval> vecInterval;
 ll dp[2 * Limit + 5][Limit + 5][2];
 // luu y: de bai la so cach xep bo cuc dai (nghia la xep nhu the xong thi khong con con bo nao co the vao chuong nua chu khong phai la dem so cach xep sao cho xep duoc nhieu bo nhat)
-// dua ve bai toan day dem so cach tao ra day ngoac dung co nhieu ngoac nhat
+// dua bai toan ve bai day ngoac
 // dp[den phan tu i][so con bo dang cho duoc bo vao chuong][da skip con bo nao chua]
 // neu da skip mot con bo thi khong duoc skip mot chuong nao sau do vi nhu the thi cach ghep se khong toi uu
 void Update(ll& x, ll y) {

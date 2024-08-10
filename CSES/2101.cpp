@@ -94,5 +94,5 @@ int main(){
     }
 }
 /*
-    Canh lon nhat tren duong di giua 2 node trong cay khung nho nhat la nho nhat
+    Canh lon nhat tren duong di giua 2 node trong cay khung nho nhat la nho nhat    
 */

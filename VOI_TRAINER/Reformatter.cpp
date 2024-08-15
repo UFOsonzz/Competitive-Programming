@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int ProbNum = 3;
-const int TestNum = 21;
+const int ProbNum = 3; // ProbNum
+const int TestNum = 50; // TestNum
 
 int main() {
     

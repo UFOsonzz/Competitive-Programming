@@ -3,6 +3,7 @@ using namespace std;
 
 const int Testnum = 50;
 const int MAXN = 2e5;
+const string ProbName = "P2";
 
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 int Rand(int l, int r) {
@@ -22,8 +23,8 @@ void Gen(ofstream& inp, int LimN) {
 
     leaves.insert(0);
     for (int i = 1; i < n; i++) {
-        
-        if (!Rand(0, 4)) {
+
+        if (!Rand(0, 30)) {
             auto it = leaves.begin();
             inp << *it << '\n';
 
@@ -44,19 +45,22 @@ void Gen(ofstream& inp, int LimN) {
 }
 
 int main() {
-    for (int Curtest = 1; Curtest <= Testnum; Curtest++) {
-        string Testname = "test" + to_string(Curtest) + ".inp";
 
-        ofstream inp(Testname);
+    for (int Curtest = 1; Curtest <= Testnum; Curtest++) {
+        string sub_folder = "test" + to_string(Curtest);
+        // system(("mkdir " + sub_folder).c_str());
+        string Inpname = sub_folder + "\\" + ProbName + ".inp";
+        ofstream inp(Inpname);
         if (Curtest <= 10) Gen(inp, 18);
         else if (Curtest <= 25) Gen(inp, 1500);
-        else Gen(inp, MAXN); 
+        else Gen(inp, MAXN);
 
     }
     system("g++ Sol.cpp -o Sol");
     for (int Curtest = 1; Curtest <= Testnum; Curtest++) {
-        string Inpname = "test" + to_string(Curtest) + ".inp";
-        string Outname = "test" + to_string(Curtest) + ".out";
+        string sub_folder = "test" + to_string(Curtest);
+        string Inpname = sub_folder + "\\" + ProbName + ".inp";
+        string Outname = sub_folder + "\\" + ProbName + ".out";
         ifstream input_file(Inpname);
         if (!input_file) {
             cerr << "Khong tim thay file " << Inpname << '\n';

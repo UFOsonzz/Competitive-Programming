@@ -85,7 +85,7 @@ int main() {
 
                 } else {
                     if (Get_hash(curi, cury, curi + mid / m - 1, cury + m - 1) == Get_hash(i, j, i + mid / m - 1, j + m - 1) &&
-                        Get_hash(curi + mid / m, cury, curi + mid / m, cury + (mid % m) - 1) == Get_hash(i + mid / m, j, i + mid / m, j + (mid % m) - 1))
+                        Get_hash(curi + mid / m, cury, curi + mid / m, cury + mid % m - 1) == Get_hash(i + mid / m, j, i + mid / m, j + mid % m - 1))
                         ok = true;
 
                 }
@@ -102,7 +102,7 @@ int main() {
                 // j + ((first_diff - 1) % m) --> col
                 first_diff--;
 
-                if (a[i + first_diff / m][j + (first_diff % m)] < a[curi + first_diff / m][cury + (first_diff % m)])
+                if (a[i + first_diff / m][j + first_diff % m] < a[curi + first_diff / m][cury + first_diff % m])
                     curi = i, cury = j;
             }
         }

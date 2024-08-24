@@ -30,3 +30,10 @@ int main() {
 
     cout << ans;
 }
+/*
+    Hinh dung cac buoc gop deu duoc thuc hien theo chieu tu trai sang phai (Gop so ben trai voi so ben phai)
+
+    vi N <= 2 ^ 18 va Ai <= 40 nen maxval <= 40 + 18 = 58
+    Ta nhay log mang dp[v][i] = j + 1 co nghia la chuyen duoc toan bo doan con [i, j] thanh gia tri v
+    dp[v][i] = dp[v - 1][dp[v - 1][i]] (Dung vi ta hinh dung cac buoc gop deu la theo chieu tu trai qua phai)
+*/

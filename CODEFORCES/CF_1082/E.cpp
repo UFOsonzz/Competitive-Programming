@@ -49,3 +49,12 @@ int main() {
 
     cout << occ[n] + ans;
 }
+
+/*
+    occ la mang tien to so lan xuat hien cua gia tri c tu 1 den i
+    goi ham get so luong v trong doan l, r la get(l, r, v)
+    ans = max(occ[n] + (get(l, r, k) - get(l, r, c)))
+    occ[n] co dinh --> cuc dai gia tri get(l, r, k) - get(l, r, c)
+    chuyen bai toan ve tim doan con lien tiep co tong lon nhat (kadane)
+    (hinh dung moi so k la mot gia tri +1, va xen giua chung la cac gia tri -(so lan xuat hien c o giua))
+*/

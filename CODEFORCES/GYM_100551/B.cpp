@@ -256,5 +256,6 @@ int main() {
 }
 /*
     Chat nhi phan song song xem thoi diem cuoi cung moi canh lam cau la thoi diem nao
-    kiem tra bang dynamic connectivity
+    kiem tra bang dynamic connectivity : 
+    bien doi bang cach them bo ba truy van : xoa -> hoi -> them canh
 */

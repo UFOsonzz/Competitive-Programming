@@ -1,18 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int ProbNum = 3; // ProbNum
-const int TestNum = 50; // TestNum
+// USACO Reformatter
+const int ProbNum = 1; // ProbNum
+const int TestNum = 12; // TestNum
 
 int main() {
     
     for (int i = 1; i <= TestNum; i++) {
         string folder_name = "test" + to_string(i);
 
-        string inp_name = "test" + to_string(i) + ".inp";
+        string inp_name = to_string(i) + ".in";
         string newinp_name = "P" + to_string(ProbNum) + ".inp";
 
-        string out_name = "test" + to_string(i) + ".out";
+        string out_name = to_string(i) + ".out";
         string newout_name = "P" + to_string(ProbNum) + ".out";
 
         if ((system(("rename " + inp_name + " " + newinp_name).c_str()) == 0) &&

@@ -13,7 +13,10 @@ int Rand(int l, int r) {
 void Gen(ofstream& inp, int subNum) {
     int n = Rand(1, MAXN);
     int m = Rand(1, n);
-    int mxmv = (subNum == 2 ? 4 * n : 2 * n - 2);
+    int mxmv;
+    if (subNum == 1) mxmv = 3*n;
+    else if (subNum == 2) mxmv = 4*n;
+    else mxmv = 2*(n - 1);
     inp << n << " " << m << " " << mxmv << '\n';
     inp.close();
 }

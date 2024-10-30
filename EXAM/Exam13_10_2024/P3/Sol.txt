@@ -1,0 +1,13 @@
+sol bài đập chuột : 
+đập hết con lẻ trước rồi đập con chẵn sau
+chiến thuật : đập 1 2 3 4 5 ... n/2 * 2
+sau khi đập như này thì các con lẻ chết hết.
+Giải thích : 
+	+ Nếu ban đầu con lẻ ở ô 1 thì đập 1 là chết
+	+ Nếu ban đầu con lẻ ở ô 1 thì đập 1 xong có thể chạy sang 2 hoặc 4 (sang 4 thì quá tốt vì ta đang muốn dồn nó về bên phải)
+	+ Nếu sau khi đập 1 xong con lẻ chạy sang ô 2 thì sau phát thứ 2 con lẻ sẽ chết, 
+	còn nếu con lẻ ở ô 4 thì nó có thể chạy sang ô 3 hoặc ô 5 => Thu hẹp vùng đập từ 1->n xuống còn 3->n
+	+ Làm tương tự như vậy, đến bước cuối cùng 
+	khi chỉ còn nhiều nhất 2 ô thì ta biết chắc chẵn mấy con lẻ sẽ ở ô nào dựa vào tính chẵn lẻ và ta chỉ cần đập ô đó là lẻ đi hết
+
+Áp dụng tư duy tương tự để đập bọn chẵn, số bước nhiều nhất sẽ vừa khít 2 * (n - 1).

@@ -1,7 +1,7 @@
 # Competitive-Programming
 ## COMPETITIVE PROGRAMMING MATERIAL FOR NATIONAL OLYMPIAD TRAINING (VOI)
 
-### MY EXPERIENCE : SECOND PRIZE IN NATIONAL OLYMPIAD 2023 AND NATIONAL OLYMPIAD 2024
+### MY RESUME : [Resume](https://drive.google.com/file/d/1Ff1_2RvrwGCYo1TFlpOG9EGNG9tF8guG/view?usp=sharing)
 
 Most codes have detailed explanations; any without or in strange formats are my old codes (Upsolved). <br>
 

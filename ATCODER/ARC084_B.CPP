@@ -48,3 +48,20 @@ int main() {
 
     cout << d[0];
 }
+
+/*
+    Mot so luon duoc construct tu 2 thao tac sau
+        - Cong 1 -> voi thao tac nay thi tong digit += 1
+        - Nhan 10 -> voi thao tac nay thi tong digit khong doi
+
+    => Construct mot so theo 2 thao tac nay thi ta co the biet duoc tong digit luon
+    Dung do thi vo han dinh : 
+    dinh x noi canh 1 chieu den x + 1 trong so 1, x noi canh 1 chieu den 10x trong so 0
+
+    => Dap an la duong di ngan nhat den mot boi cua K
+    ** Toi uu xuong k dinh 
+    - Nhan xet : ta chi quan tam den x mod K vi ta chi can tim duong den boi
+    => dinh x noi canh den dinh (x + 1) % K trong so 1
+    => dinh x noi canh den dinh 10x % K trong so 0
+    => tim duong di ngan nhat tu dinh 1 den di 0, dap an la do dai duong di + 1 (1 nay la cua thang 1)
+*/

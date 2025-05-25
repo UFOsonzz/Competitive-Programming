@@ -5,7 +5,7 @@ const int Testnum = 50;
 const int MAXN = 100;
 const int MAXM = 10000;
 const int Lim = 1000;
-const string ProbName = "P1";
+const string ProbName = "P4";
 
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 int Rand(int l, int r) {
@@ -54,7 +54,7 @@ int main() {
 
     for (int Curtest = 1; Curtest <= Testnum; Curtest++) {
         string sub_folder = "test" + to_string(Curtest);
-        system(("mkdir " + sub_folder).c_str());
+        // system(("mkdir " + sub_folder).c_str());
         string Inpname = sub_folder + "\\" + ProbName + ".inp";
         ofstream inp(Inpname);
         if (Curtest <= 15) Gen1(inp);
